@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-0i$o%8grzk4@y!kp1#wf9r$t+kykn5m#=z&41ug&2kr$1@jp4#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1,localhost']
 
 
 # Application definition
@@ -74,8 +74,8 @@ WSGI_APPLICATION = 'DevOpsCotic.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+         (...)
+        'NAME': os.path.join(BASE_DIR, nome.sqlite3'),
     }
 }
 
@@ -102,11 +102,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
+
+USE_L10N = True
 
 USE_TZ = True
 
