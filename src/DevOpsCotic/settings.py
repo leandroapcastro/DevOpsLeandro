@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'DevOpsCotic.wsgi.application'
 DATABASES = {
     'default': {
          (...)
-        'NAME': os.path.join(BASE_DIR, nome.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, nome.sqlite3),
     }
 }
 
